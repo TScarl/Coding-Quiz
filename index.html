@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding quiz</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<header>
+    <nav class = "scores">
+        <p><a href = "highscores.html">Highscores</a></p>
+    </nav>
+</header>
+
+<body>
+    <div class = "start-screen">
+        <h1>Coding quiz!</h1>
+        <p>Speed challenge! answer the following 5 questions as quickly as you can to get the highest score possible. wrong answers will be penalised with expulsion!</p>
+        <button class = "start-btn">Start quiz</button>
+    </div>
+
+    <div class = "timer-display"></div>
+    <div class = "question-container" id="question-container-1">
+        <h2 class="question-title">JavaScript is used to add _______ to webpages?</h2>
+        <ul class="choices-list">
+            <li class = "choice">Enjoyment</li>
+            <li class = "choice correct-answer">Interactivity</li>
+            <li class = "choice">Style</li>
+            <li class = "choice">Structure</li>
+        </ul>
+        <p class = "answer-feedback" id="answer-feedback-1">Interactivity</p>
+    </div>
+    <div class = "question-container"id="question-container-2">
+        <h2 class="question-title">The .querySelector() command performs which function?</h2>
+        <ul class="choices-list">
+            <li class = "choice correct-answer">Selects the first element which correlates with whats in the parantheses</li>
+            <li class = "choice">Performs a set function once an event occurs</li>
+            <li class = "choice">Allows the Coder to add an element to their HTML file</li>
+            <li class = "choice">Performs CSS functions within JavaScript</li>
+        </ul>
+        <p class = "answer-feedback" id="answer-feedback-2">Selects the first element which correlates with whats in the parantheses</p>
+    </div>
+    <div class = "question-container" id="question-container-3">
+        <h2 class="question-title">Arrays in JavaScript can be used to store ____.</h2>
+        <ul class="choices-list">
+            <li class = "choice">Numbers and strings</li>
+            <li class = "choice">Other arrays</li>
+            <li class = "choice">Booleans</li>
+            <li class = "choice correct-answer">All of the above</li>
+        </ul>
+        <p class = "answer-feedback" id="answer-feedback-3">All of the above</p>
+    </div>
+    <div class = "question-container" id="question-container-4">
+        <h2 class="question-title">What function can you perform with the windows.loaction command?</h2>
+        <ul class="choices-list">
+            <li class = "choice correct-answer">Retrieve the window's url and allows you to set a new one</li>
+            <li class = "choice">View the default properties of the HTML document</li>
+            <li class = "choice">Allows you to add functionality to an element named location</li>
+            <li class = "choice">Nothing, its complete jibberish</li>
+        </ul>
+        <p class = "answer-feedback" id="answer-feedback-4">Retrieve the window's url and allows you to set a new one</p>
+    </div>
+    <div class = "question-container" id="question-container-5">
+        <h2 class="question-title">Who is the most powerful character is Dragon Ball Z?</h2>
+        <ul class="choices-list">
+            <li class = "choice">Vegeta</li>
+            <li class = "choice">Piccolo</li>
+            <li class = "choice correct-answer">Goku</li>
+            <li class = "choice">Gohan</li>
+        </ul>
+        <p class = "answer-feedback" id="answer-feedback-5">Goku</p>
+    </div>
+
+    <div class = "submit-score">
+        <p>You completed the quiz! Nicely done!!</p>
+        <p>your score is <span class="final-score"></span></p>
+        <p>Enter initials: <input type="text" class = "initials"></p>
+        <div class = score-list></div>
+        <button class = "submit-btn">Submit</button>
+        <button class = "replay">Replay</button>
+    </div>
+
+    <script src = "./assets/script.js"></script>
+
+</body>
+</html>

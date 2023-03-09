@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+}
+
+header{
+    float: left;
+}
+
+a{
+    font-size: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+    color:brown;
+}
+
+button{
+    background-color: blue;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: red;
+}
+
+/* hides the questions and final score page from the start page */
+.question-container, .submit-score, .hide{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+li{
+    list-style-type: none;
+}
